@@ -1,0 +1,210 @@
+<?php
+
+namespace Database\Seeders;
+
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+
+class Course_seeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     */
+    public function run(): void
+    {
+        DB::table("cources")->insert([
+            [
+                'courseDomain' => 'Judiciary',
+                'bannerUrl' => 'https://example.com/images/engineering.jpg',
+                'title' => 'Judiciary',
+                'description' => 'We at St Peter’s Law Academy provide coaching for judiciary exams online, offline, and in hybrid mode.',
+                'price' => 200000,
+                'mode' => 'HYBRID',
+                'medium' => 'English',
+                'educationalEligibility' => "A citizen of India, with a bachelor's degree in law, can take the judiciary exam.",
+                'professionalEligibility' => "Candidates appearing for the lower judiciary service exam do not require any experience. At the same time, those appearing for the higher judiciary service examination need a minimum of seven years of experience in litigation.",
+                'ageLimit' => "The age limit to take the judiciary exam varies from state to state, typically between 21 to 35 years.",
+                'courseIncludes' => null,
+                'stateSpecificPreparation' => null,
+                'testSeries' => null,
+                'whyChoose' => null,
+                'whoShouldJoin' => null,
+                'testSchedule' => json_encode([
+                    'Alternate Weekly test (ALWT) - Every 14 days',
+                    'Monthly Test (MT) - Every 30 days',
+                    'Quarterly Test (QT) - Every 90 days',
+                    'Half Yearly Test (HYT) - Every 6 months',
+                    'Subject-wise tests (ST) will be conducted throughout',
+                    'Yearly test',
+                ]),
+            ],
+            [
+                'courseDomain' => 'CLAT',
+                'bannerUrl' => 'https://example.com/images/engineering.jpg',
+                'title' => 'CLAT Coaching',
+                'description' => 'St Peter’s Law Academy provides coaching for CLAT UG and other law entrance exams for 5 years in online, offline, and hybrid modes.',
+                'price' => 80000,
+                'mode' => 'HYBRID',
+                'medium' => 'English',
+                'educationalEligibility' => null,
+                'professionalEligibility' => null,
+                'ageLimit' => null,
+                'courseIncludes' => null,
+                'stateSpecificPreparation' => null,
+                'testSeries' => null,
+                'whyChoose' => null,
+                'whoShouldJoin' => null,
+                'testSchedule' => json_encode([
+                    'Alternate Weekly test (ALWT) - Every 14 days',
+                    'Monthly Test (MT) - Every 30 days',
+                    'Quarterly Test (QT) - Every 90 days',
+                    'Half Yearly Test (HYT) - Every 6 months',
+                    'Subject-wise tests (ST) will be conducted throughout',
+                    'Yearly test',
+                ]),
+            ],
+            [
+                'courseDomain' => 'CUET',
+                'bannerUrl' => 'https://example.com/images/engineering.jpg',
+                'title' => 'CUET',
+                'description' => 'We at St Peter’s Law Academy provide coaching for CUET DU LLB exams online, offline, and in hybrid mode.',
+                'price' => 60000,
+                'mode' => 'HYBRID',
+                'medium' => 'English',
+                'educationalEligibility' => "Bachelor's degree from a recognized university with a minimum aggregate of 45% in any discipline ranging from law, commerce, science, or arts.",
+                'professionalEligibility' => "The candidate is only eligible to appear for the CUET if they are in the final year of college.",
+                'ageLimit' => "The exam has no maximum age limit, but the candidates should not be younger than 20.",
+                'courseIncludes' => null,
+                'stateSpecificPreparation' => null,
+                'testSeries' => null,
+                'whyChoose' => json_encode([
+                    'Top-Level inclusive and exam-oriented study material researched and developed by our faculties.',
+                    'Ready Reckoner - Covering theory (Chapter wise and Topic-wise).',
+                    'Digest - Practice Questions for both Pre and Mains.',
+                ]),
+                'whoShouldJoin' => null,
+                'testSchedule' => json_encode([
+                    'Subject-wise Revision After Completion',
+                    'Alternate Weekly test (ALWT) - Every 14 days',
+                    'Monthly Test (MT) - Every 30 days',
+                    'Quarterly Test (QT) - Every 90 days',
+                    'Half Yearly Test (HYT) - Every 6 months',
+                    'Subject-wise tests (ST) will be conducted throughout',
+                    'Yearly test',
+                ]),
+            ],
+            [
+                'courseDomain' => 'CUET',
+                'bannerUrl' => 'https://example.com/images/engineering.jpg',
+                'title' => 'CUET - PG (LAW)',
+                'description' => 'CUET – PG (LAW) Also Known as DU LLB',
+                'price' => 60000,
+                'mode' => 'HYBRID',
+                'medium' => 'English/Hindi',
+                'educationalEligibility' => null,
+                'professionalEligibility' => null,
+                'ageLimit' => null,
+                'courseIncludes' => json_encode([
+                    'Complete Syllabus Coverage.',
+                    'HYBRID COURSE for CUET - PG (LAW).',
+                    'Learn under the leadership of NLUs & DU LLB alumni.',
+                    '4 days of classes in a week with 3-4 hrs sessions.',
+                    'CLASSES will be extended as per academic requirements.',
+                    'OFFLINE as well as ONLINE Support.',
+                    'STUDY MATERIALS: A series of fundamental & practice sets, current affairs timeline.',
+                    'PRACTICE SHEETS: Classes are supported by assignments.',
+                    'Offline & Online TEST SERIES',
+                    'SECTIONAL TESTS & UNIT TESTS',
+                    'MOCK TESTS (FULL LENGTH)*',
+                    'Personalized career counseling',
+                    'Doubt clearing sessions',
+                    'Payment installment option',
+                    'Entrance exam form filling assistance',
+                ]),
+                'stateSpecificPreparation' => null,
+                'testSeries' => null,
+                'whyChoose' => null,
+                'whoShouldJoin' => json_encode([
+                    'Students who are in their final year of graduation.',
+                    'Students who are fresh graduates.',
+                    'Students who have started their preparation but aren’t satisfied & wish to have a real boost to their preparation.',
+                ]),
+                'testSchedule' => null,
+            ],
+            [
+                'courseDomain' => 'Judiciary',
+                'bannerUrl' => 'https://example.com/images/engineering.jpg',
+                'title' => 'Judiciary Foundation Program',
+                'description' => null,
+                'price' => 200000,
+                'mode' => 'HYBRID',
+                'medium' => 'Hindi',
+                'educationalEligibility' => null,
+                'professionalEligibility' => null,
+                'ageLimit' => null,
+                'courseIncludes' => null,
+                'stateSpecificPreparation' => null,
+                'testSeries' => null,
+                'whyChoose' => null,
+                'whoShouldJoin' => json_encode([
+                    'जो छात्र 3 साल या 5 साल के कानून के अंतिम वर्ष में हैं और शुरुआत से ही न्यायिक सेवा की तैयारी करना चाहते हैं।',
+                    'ऐसे छात्र जिन्होंने पहले तैयारी की है लेकिन पिछले प्रयास में वांछित परिणाम से खुश नहीं थे। चाहे प्रीलिम्स हो या मेन्स।',
+                    'जिन छात्रों ने अपनी तैयारी शुरू कर दी है, लेकिन वे अपनी तैयारी से संतुष्ट नहीं हैं और अपनी तैयारी को वास्तविक रूप से क्रियान्वित करना चाहते हैं।',
+                ]),
+                'testSchedule' => null,
+            ],
+            [
+                'courseDomain' => 'Judiciary',
+                'bannerUrl' => 'https://example.com/images/engineering.jpg',
+                'title' => 'Judiciary Foundation Program',
+                'description' => 'St.Peter’s Law Academy’s Judiciary Coaching is an interactive 15-month foundational program that is designed to cover all the aspects of clearing the Judicial Services Examination.',
+                'price' => 200000,
+                'mode' => 'Online',
+                'medium' => 'English',
+                'educationalEligibility' => "A citizen of India, with a bachelor's degree in law, can take the judiciary exam.",
+                'professionalEligibility' => "Candidates appearing for the lower judiciary service exam do not require any experience. At the same time, those appearing for the higher judiciary service examination need a minimum of seven years of experience in litigation.",
+                'ageLimit' => "The age limit to take the judiciary exam varies from state to state, typically between 21 to 35 years.",
+                'courseIncludes' => null,
+                'stateSpecificPreparation' => json_encode([
+                    'description' => 'We focus on state-specific preparation for the judiciary examination. We conduct classes on local laws and state-specific laws as per the updated syllabus.',
+                    'points' => [
+                        'Previous Year Paper solving to help you understand the pattern and nature of questions.',
+                        'State-specific test series for targeted states.',
+                        'Model/ Mock Prelims Paper State wise.',
+                        'Model/ Mock Mains Paper State-wise.',
+                        'Self-paced classes on local laws.',
+                    ]
+                ]),
+                'testSeries' => json_encode([
+                    'description' => 'To keep challenging you and to improve your test-solving ability, we conduct tests regularly. The tests are both objective as well as subjective in nature and would help you in evaluating your performance. Also, the tests are conducted at all three levels of the judiciary examination – Prelims, Mains, and Interviews.',
+                    'points' => [
+                        'Full Syllabus and Modular Test Series on each subject',
+                        'Mock Prelims and Mains Papers',
+                        'State-specific test series',
+                        'Sectional Test',
+                        'Monthly Test',
+                        'Weekly Objective and Subjective Test',
+                    ]
+                ]),
+                'whyChoose' => json_encode([
+                    'Faculties include Former Judges and Senior Advocates, Experienced academicians, subject specialists, and research scholars.',
+                    'Modular Content and Resources.',
+                    'Focus on State-Specific Preparation.',
+                    'Model Answer and Model Answer Framing Sessions.',
+                    'Dedicated Content Support.',
+                    'Feedback Session.',
+                    'Individual Answer Analysis by the Team.',
+                    'Research Papers.',
+                ]),
+                'whoShouldJoin' => json_encode([
+                    'Aspirants of any state judiciary who are preparing for judicial services.',
+                    'Beginners who are preparing for the first time.',
+                    'Law graduates looking to enter the Judicial Services',
+                ]),
+                'testSchedule' => null,
+            ],
+        ]);
+    
+    }
+}

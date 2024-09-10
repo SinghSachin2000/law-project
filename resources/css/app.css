@@ -1,0 +1,471 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  
+  .blink {
+    animation: blink 2s infinite;
+  }
+  
+  @keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+  
+  .animate-marquee {
+    animation: marquee 20s linear infinite;
+    min-width: 100%;
+  }
+  
+  .circle {
+    display: inline-block;
+    width: 12rem; 
+    height: 12rem;
+    border-radius: 50%;
+    position: relative;
+    line-height: 1;
+    /* text-align: center; */
+    /* margin: auto; */
+    background-color: crimson;
+  }
+  
+ 
+.rotate-0 { 
+    transform: rotate(0deg) translateX(61px) rotate(0deg); 
+  }
+  .rotate-30 { 
+    transform: rotate(30deg) translateX(61px) rotate(-30deg); 
+  }
+  .rotate-60 { 
+    transform: rotate(60deg) translateX(61px) rotate(-60deg); 
+  }
+  .rotate-90 { 
+    transform: rotate(90deg) translateX(61px) rotate(-90deg); 
+  }
+  .rotate-120 { 
+    transform: rotate(120deg) translateX(61px) rotate(-120deg); 
+  }
+  .rotate-150 { 
+    transform: rotate(150deg) translateX(61px) rotate(-150deg); 
+  }
+  .rotate-180 { 
+    transform: rotate(180deg) translateX(61px) rotate(-180deg); 
+  }
+  .rotate-210 { 
+    transform: rotate(210deg) translateX(61px) rotate(-210deg); 
+  }
+  .rotate-240 { 
+    transform: rotate(240deg) translateX(61px) rotate(-240deg); 
+  }
+  .rotate-270 { 
+    transform: rotate(270deg) translateX(61px) rotate(-270deg); 
+  }
+  .rotate-300 { 
+    transform: rotate(300deg) translateX(61px) rotate(-300deg); 
+  }
+  .rotate-330 { 
+    transform: rotate(330deg) translateX(61px) rotate(-330deg); 
+  }
+  .rotate-360 { 
+    transform: rotate(360deg) translateX(61px) rotate(-360deg); 
+  }
+  .rotate-390 { 
+    transform: rotate(390deg) translateX(61px) rotate(-390deg); 
+  }
+  .rotate-420 { 
+    transform: rotate(420deg) translateX(61px) rotate(-420deg); 
+  }
+  .rotate-450 { 
+    transform: rotate(450deg) translateX(61px) rotate(-450deg); 
+  }
+  .rotate-480 { 
+    transform: rotate(480deg) translateX(61px) rotate(-480deg); 
+  }
+  .rotate-510 { 
+    transform: rotate(510deg) translateX(61px) rotate(-510deg); 
+  }
+
+
+  .circle span {
+    display: inline-block;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    /* line-height: 1; */
+    color: aliceblue;
+  }
+  
+
+
+.rotate-circle {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: rotate 20s linear infinite;
+}
+
+.rotate-circle span {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-origin: center;
+}
+
+
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+/* In your custom CSS file or <style> block */
+
+@layer utilities {
+    .perspective-1000 {
+      perspective: 1000px;
+    }
+    .transform-style-preserve-3d {
+      transform-style: preserve-3d;
+    }
+    .rotate-y-180 {
+      transform: rotateY(180deg);
+    }
+    .flip-container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+    .flip-container .front,
+    .flip-container .back {
+      backface-visibility: hidden;
+    }
+  }
+  
+  .aboutsec{
+    background-image: url("../assets/focusarrow.png");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: auto;
+
+  }
+
+  .topp{
+    background-image: url("../assets/meeting2.webp");
+    background-repeat: no-repeat;
+    background-size:100% ;
+  }
+
+  .reqcall{
+    background-image: url("../assets/callback.png");
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: auto;
+
+  }
+
+
+
+  .notifi{
+    background-image: url("../assets/notifi.png"), url("../assets/notifi2.png");
+    background-repeat: no-repeat;
+    background-position: top left,bottom right;
+    background-size: auto;
+    z-index: 10;
+  }
+
+.footerdes{
+  background-image: url("../assets/footer1.png"), url("../assets/footer2.png");
+  background-repeat: no-repeat;
+  background-position: bottom left, top right;
+  background-size: auto;
+  z-index: 10;
+}
+
+.legalpage{
+  background-image: url("../assets/callback.png");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: auto;
+  z-index: 10;
+}
+/* .footerdes::after {
+  content: "";
+  background-image: url("../assets/footer3.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index:30;
+  animation: animateFooter3 5s infinite;
+} */
+
+/* @keyframes animateFooter3 {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(60px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+} */
+
+.eventsec{
+  background-image: url("../assets/notifi.png"), url("../assets/notifi2.png");
+  background-repeat: no-repeat;
+  background-position: top left,bottom right;
+  background-size: auto;
+  z-index: 10;
+}
+  .card-container {
+    position: relative;
+    height: auto; 
+}
+
+.card-image {
+
+    height: 100%;
+}
+
+.card-shadow {
+    box-shadow: inset 0px -15px 30px 30px rgba(54, 53, 53, 0.5);
+
+}
+
+.card-heading {
+    z-index: 10;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes dotimg {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(60px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.dotimg {
+  animation: dotimg 2s ease-in-out infinite;
+}
+
+
+@keyframes successimg {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.successimg {
+  animation: successimg 2s ease-in-out infinite;
+}
+
+.growthsec{
+  background-image: url("../assets/growth1.png"), url("../assets/growth5.png");
+  background-repeat: no-repeat;
+  background-position: top right,bottom left;
+  background-size: auto;
+  z-index: 10;
+}
+
+.blogteach{
+  background-image: url("../assets/blog1.png"), url("../assets/blog2.png");
+  background-repeat: no-repeat;
+  background-position: top left,bottom right;
+  background-size: auto;
+  z-index: 10;
+}
+/* =================== */
+
+
+
+.curtain-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.curtain {
+  position: relative;
+  height: 100%;
+}
+
+.curtain-bg, .curtain-overlay {
+  transition: transform 0.5s ease;
+}
+
+.curtain-overlay {
+  transform: translateY(-100%);
+}
+
+.curtain:hover .curtain-overlay {
+  transform: translateY(0%);
+}
+
+/* ============ */
+.nav-item.dropdown .dropdown-menu {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.whyusimg{
+  background-image: url('../assets/whyusimg.png');
+  background-repeat: no-repeat;
+}
+
+.accordion-content {
+  display: none;
+  padding: 10px;
+  border: 1px solid #ddd;
+
+}
+
+.hidden {
+  display: none;
+}
+
+.border-4 {
+  border-width: 4px;
+}
+.border-blue-300 {
+  border-color: #a3bffa; /* Tailwind blue-300 color */
+}
+.latestblog{
+  background-image: url("../assets/blog1.png"), url("../assets/blog2.png");
+  background-repeat: no-repeat;
+  background-position: top left,bottom right;
+  background-size: auto;
+  z-index: 10;
+}
+/* https://itcodetech.com/stpeterslaw/static/assets/img/project/project_shape01.png */
+
+.coursehome {
+  background-image: url("https://itcodetech.com/stpeterslaw/static/assets/img/project/project_shape01.png"), 
+                    url("https://itcodetech.com/stpeterslaw/static/assets/img/project/project_shape02.png");
+  background-repeat: no-repeat;
+  background-position: bottom left, top right;
+  background-size: auto;
+  z-index: 10;
+  position: relative;
+}
+
+
+
+.video-section {
+  text-align: center;
+  margin: 40px 0;
+}
+.video-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.video-item {
+  max-width: 350px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+}
+
+
+
+.hover-white-image {
+  height: auto;
+  transition: filter 0.3s ease-in-out; /* Smooth transition */
+}
+
+
+.hover-white-image:hover {
+  filter: brightness(0) invert(1);
+}
+
+
+/* =========== */
+
+.nav-item .dropdown-menu {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  transform: translateY(10px); 
+  transition: transform 0.3s ease;
+}
+
+.nav-item:hover .dropdown-menu,
+.nav-item:focus-within .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0); 
+}
+
+.nav-item .dropdown-toggle::after {
+  transition: transform 0.3s ease;
+}
+
+.nav-item:hover .dropdown-toggle::after {
+  transform: rotate(180deg); 
+}
+
+.dropdown-menu {
+  transition: max-height 5s ease-in-out, opacity 0.4s ease-in-out;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  max-height: 500px; 
+  opacity: 1;
+}
